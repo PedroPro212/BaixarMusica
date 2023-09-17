@@ -18,3 +18,4 @@ while True:
         baixar = Baixar(valores['url'])
         baixar.download()
         print('Baixado com Sucesso!!')
+        janela['url'].update('')
