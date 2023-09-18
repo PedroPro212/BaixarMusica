@@ -5,6 +5,7 @@ sg.theme('Reddit')
 
 layout = [
     [sg.Text('Url:'), sg.Input(key='url')],
+    [sg.Checkbox('Audio', key='audio'), sg.Checkbox('Video', key='video')],
     [sg.Button('Baixar')]
 ]
 
