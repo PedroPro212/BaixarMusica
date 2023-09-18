@@ -9,11 +9,14 @@ layout = [
     [sg.Button('Baixar')]
 ]
 
-janela = sg.Window('Baixar Músicas', layout)
+icone = 'imgs/music.ico';
+
+janela = sg.Window('Baixar Músicas', layout, icon=icone)
 
 while True:
     eventos, valores = janela.read()
     if eventos == sg.WINDOW_CLOSED:
+        print("Finalizado")
         break   
     if eventos == 'Baixar':
         baixar = Baixar(valores['url'])
